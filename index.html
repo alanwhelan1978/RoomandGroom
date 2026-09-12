@@ -1,210 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Room & Groom offers dog boarding, daycare and professional grooming in Ballygarrett, Co. Wexford." />
-  <title>Room & Groom | Dog Boarding, Daycare & Grooming in Wexford</title>
+  <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Room & Groom offers dog boarding, daycare and professional grooming in Ballygarrett, Co. Wexford."
+  >
+
+  <title>Room & Groom | Dog Boarding, Daycare & Grooming Wexford</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header class="site-header">
+
     <div class="topbar">
       <div class="container topbar-inner">
-        <span>📞 086 075 7092</span>
-        <span>✉ juliewynne@live.ie</span>
-        <span>📍 Ballygarrett, Co. Wexford</span>
+
+        <a href="tel:+353860757092">
+          086 075 7092
+        </a>
+
+        <a href="mailto:juliewynne@live.ie">
+          juliewynne@live.ie
+        </a>
+
+        <span>
+          Ballygarrett, Co. Wexford
+        </span>
+
       </div>
     </div>
+
 
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Room and Groom home">
-        <span class="brand-main">Room &amp; Groom</span>
-        <span class="brand-sub">Dog Boarding · Daycare · Grooming</span>
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Room and Groom homepage"
+      >
+
+        <span class="brand-main">
+          Room &amp; Groom
+        </span>
+
+        <span class="brand-sub">
+          Dog Boarding · Daycare · Grooming
+        </span>
+
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 
-      <nav class="main-nav">
-        <a href="#home">Home</a>
-        <a href="#services">Boarding &amp; Daycare</a>
-        <a href="#grooming">Grooming</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-primary nav-cta" href="#contact">Enquire Now</a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a href="index.html" class="active">
+          Home
+        </a>
+
+        <a href="#services">
+          Boarding &amp; Daycare
+        </a>
+
+        <a href="#grooming">
+          Grooming
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+        <a
+          class="btn btn-primary nav-cta"
+          href="#contact"
+        >
+          Enquire Now
+        </a>
+
       </nav>
+
     </div>
+
   </header>
 
+
   <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero" id="home">
+
       <div class="hero-overlay"></div>
+
       <div class="container hero-content">
-        <p class="eyebrow">Happy dogs. Happier people.</p>
-        <h1>A home away<br>from home.</h1>
-        <p class="hero-copy">Professional boarding, daycare and grooming in Ballygarrett, Co. Wexford.</p>
+
+        <p class="eyebrow">
+          Happy dogs. Happier people.
+        </p>
+
+        <h1>
+          A home away<br>
+          from home.
+        </h1>
+
+        <p class="hero-copy">
+          Professional boarding, daycare and grooming
+          in Ballygarrett, Co. Wexford.
+        </p>
+
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Enquire Now</a>
-          <a class="btn btn-ghost" href="tel:+353860757092">Call 086 075 7092</a>
+
+          <a
+            class="btn btn-primary"
+            href="#contact"
+          >
+            Enquire Now
+          </a>
+
+          <a
+            class="btn btn-ghost"
+            href="tel:+353860757092"
+          >
+            Call 086 075 7092
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
 
     <section class="section services" id="services">
+
       <div class="container">
+
         <div class="section-heading">
-          <p class="eyebrow dark">What we do</p>
-          <h2>Everything your dog needs, all in one place.</h2>
+
+          <p class="eyebrow dark">
+            What we do
+          </p>
+
+          <h2>
+            Everything your dog needs,
+            all in one place.
+          </h2>
+
         </div>
+
 
         <div class="service-grid">
+
+
+          <!-- Boarding -->
+
           <article class="service-card service-card-boarding">
+
             <div class="service-card-inner">
-              <h3>Boarding</h3>
-              <p>Comfortable, secure care while you're away.</p>
-              <a href="#contact">Find out more →</a>
+
+              <h3>
+                Boarding
+              </h3>
+
+              <p>
+                Comfortable, secure care
+                while you're away.
+              </p>
+
+              <a href="#contact">
+                Find out more →
+              </a>
+
             </div>
+
           </article>
+
+
+
+          <!-- Daycare -->
 
           <article class="service-card service-card-daycare">
+
             <div class="service-card-inner">
-              <h3>Daycare</h3>
-              <p>A safe place to play, exercise and socialise.</p>
-              <a href="#contact">Find out more →</a>
+
+              <h3>
+                Daycare
+              </h3>
+
+              <p>
+                A safe place to play,
+                exercise and socialise.
+              </p>
+
+              <a href="#contact">
+                Find out more →
+              </a>
+
             </div>
+
           </article>
 
-          <article class="service-card service-card-grooming" id="grooming">
+
+
+          <!-- Grooming -->
+
+          <article
+            class="service-card service-card-grooming"
+            id="grooming"
+          >
+
             <div class="service-card-inner">
-              <h3>Grooming</h3>
-              <p>Professional grooming to keep them looking their best.</p>
-              <a href="#contact">Find out more →</a>
+
+              <h3>
+                Grooming
+              </h3>
+
+              <p>
+                Professional grooming to keep
+                them looking their best.
+              </p>
+
+              <a href="#contact">
+                Find out more →
+              </a>
+
             </div>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section class="section about" id="about">
+
       <div class="container about-grid">
-        <div class="about-image" role="img" aria-label="Room and Groom countryside premises"></div>
+
+
+        <!-- Premises image -->
+
+        <div
+          class="about-image"
+          role="img"
+          aria-label="Room and Groom premises in Ballygarrett"
+        ></div>
+
+
+
+        <!-- About copy -->
 
         <div class="about-copy">
-          <p class="eyebrow dark">About Room &amp; Groom</p>
-          <h2>Caring for Wexford's dogs like they're our own.</h2>
-          <p>
-            Room &amp; Groom is a family-run boarding kennels and grooming parlour based in Ballygarrett, Co. Wexford.
-            We provide a safe, comfortable and caring environment for dogs staying with us for boarding, daycare or grooming.
+
+          <p class="eyebrow dark">
+            About Room &amp; Groom
           </p>
-          <a class="btn btn-primary" href="#contact">Get in touch</a>
+
+          <h2>
+            Caring for Wexford's dogs
+            like they're our own.
+          </h2>
+
+          <p>
+            Room &amp; Groom is a family-run boarding
+            kennels and grooming parlour based in
+            Ballygarrett, Co. Wexford.
+          </p>
+
+          <p>
+            We provide a safe, comfortable and caring
+            environment for dogs staying with us for
+            boarding, daycare or visiting our
+            professional grooming parlour.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="#contact"
+          >
+            Get in Touch
+          </a>
+
         </div>
+
+
+
+        <!-- Features -->
 
         <div class="features">
-          <div class="feature">🐾 <span>Fully secure location</span></div>
-          <div class="feature">♡ <span>Indoor &amp; outdoor pens</span></div>
-          <div class="feature">🌲 <span>Exercise &amp; play areas</span></div>
-          <div class="feature">✂ <span>Full grooming services</span></div>
-          <div class="feature">🛡 <span>Flea &amp; tick removal</span></div>
-          <div class="feature">🕒 <span>24hr vet on call</span></div>
+
+          <div class="feature">
+            <span class="feature-icon">🐾</span>
+            <span>Fully secure location</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">♡</span>
+            <span>Indoor &amp; outdoor pens</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🌲</span>
+            <span>Exercise &amp; play areas</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">✂</span>
+            <span>Full grooming services</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🛡</span>
+            <span>Flea &amp; tick removal</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🕒</span>
+            <span>24hr vet on call</span>
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         SERVICE STRIP
+    ========================== -->
 
     <section class="strip">
+
       <div class="container strip-grid">
-        <div>Long &amp; short-term boarding</div>
-        <div>Day care</div>
-        <div>Dog walking</div>
-        <div>Pamper treatments</div>
-        <div>Accessories &amp; more</div>
+
+        <div class="strip-item">
+          <span>⌂</span>
+          <p>
+            Long &amp; short-term<br>
+            boarding
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>☀</span>
+          <p>
+            Day care
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>🐾</span>
+          <p>
+            Dog walking
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>♡</span>
+          <p>
+            Pamper treatments
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>●</span>
+          <p>
+            Accessories<br>
+            &amp; more
+          </p>
+        </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
 
     <section class="section testimonials">
+
       <div class="container">
+
         <div class="section-heading">
-          <p class="eyebrow dark">What our customers say</p>
-          <h2>Happy dogs. Happy owners.</h2>
+
+          <p class="eyebrow dark">
+            What our customers say
+          </p>
+
+          <h2>
+            Happy dogs. Happy owners.
+          </h2>
+
         </div>
+
 
         <div class="testimonial-grid">
-          <blockquote>
-            <div class="stars">★★★★★</div>
-            <p>“Add a genuine customer testimonial here.”</p>
-            <footer>— Customer name</footer>
-          </blockquote>
+
 
           <blockquote>
-            <div class="stars">★★★★★</div>
-            <p>“Add a genuine grooming testimonial here.”</p>
-            <footer>— Customer name</footer>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine customer testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
           </blockquote>
 
+
+
           <blockquote>
-            <div class="stars">★★★★★</div>
-            <p>“Add a genuine boarding testimonial here.”</p>
-            <footer>— Customer name</footer>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine grooming testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
           </blockquote>
+
+
+
+          <blockquote>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine boarding testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
+          </blockquote>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         CONTACT CTA
+    ========================== -->
 
     <section class="cta" id="contact">
+
       <div class="container cta-inner">
+
         <div>
-          <p class="eyebrow">Ready to chat?</p>
-          <h2>Talk to us about your dog's stay or grooming.</h2>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-ghost-light" href="tel:+353860757092">Call 086 075 7092</a>
-          <a class="btn btn-light" href="mailto:juliewynne@live.ie?subject=Room%20%26%20Groom%20Enquiry">Send an Enquiry</a>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand footer-brand">
-          <span class="brand-main">Room &amp; Groom</span>
-          <span class="brand-sub">Dog Boarding · Daycare · Grooming</span>
-        </div>
-      </div>
-      <div>
-        <strong>Contact</strong><br>
-        Ballygarrett, Co. Wexford<br>
-        086 075 7092<br>
-        juliewynne@live.ie
-      </div>
-      <div class="credit">
-        <span>© 2026 Room &amp; Groom</span><br>
-        <span>Website by <strong>WHELHAUS</strong></span>
-      </div>
-    </div>
-  </footer>
+          <p class="eyebrow">
+            Ready to chat?
+          </p>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.main-nav');
-
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-
-    nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
-</body>
-</html>
+          <h2>
+            Talk to us about
