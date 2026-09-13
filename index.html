@@ -1,30 +1,770 @@
-<nav class="main-nav" aria-label="Main navigation">
+<!DOCTYPE html>
+<html lang="en">
 
-  <a href="index.html">
-    Home
-  </a>
+<head>
+  <meta charset="UTF-8">
 
-  <a href="boarding.html">
-    Boarding &amp; Daycare
-  </a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <a href="index.html#grooming">
-    Grooming
-  </a>
-
-  <a href="index.html#about">
-    About
-  </a>
-
-  <a href="index.html#contact">
-    Contact
-  </a>
-
-  <a
-    class="btn btn-primary nav-cta"
-    href="index.html#contact"
+  <meta
+    name="description"
+    content="Room & Groom offers dog boarding, daycare and professional grooming in Ballygarrett, Co. Wexford."
   >
-    Enquire Now
-  </a>
 
-</nav>
+  <title>Room & Groom | Dog Boarding, Daycare & Grooming Wexford</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="topbar">
+      <div class="container topbar-inner">
+
+        <a href="tel:+353860757092">
+          086 075 7092
+        </a>
+
+        <a href="mailto:juliewynne@live.ie">
+          juliewynne@live.ie
+        </a>
+
+        <span>
+          Ballygarrett, Co. Wexford
+        </span>
+
+      </div>
+    </div>
+
+
+    <div class="container nav-wrap">
+
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="Room and Groom homepage"
+      >
+
+        <span class="brand-main">
+          Room &amp; Groom
+        </span>
+
+        <span class="brand-sub">
+          Dog Boarding · Daycare · Grooming
+        </span>
+
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        ☰
+      </button>
+
+
+      <nav
+        class="main-nav"
+        id="main-navigation"
+        aria-label="Main navigation"
+      >
+
+        <a
+          href="index.html"
+          class="active"
+        >
+          Home
+        </a>
+
+        <a href="boarding.html">
+          Boarding &amp; Daycare
+        </a>
+
+        <a href="#grooming">
+          Grooming
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+        <a
+          href="#contact"
+          class="btn btn-primary nav-cta"
+        >
+          Enquire Now
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <p class="eyebrow">
+          Happy dogs. Happier people.
+        </p>
+
+        <h1>
+          A home away<br>
+          from home.
+        </h1>
+
+        <p class="hero-copy">
+          Professional boarding, daycare and grooming
+          in Ballygarrett, Co. Wexford.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+          >
+            Enquire Now
+          </a>
+
+          <a
+            href="tel:+353860757092"
+            class="btn btn-ghost"
+          >
+            Call 086 075 7092
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section
+      class="section services"
+      id="services"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow dark">
+            What we do
+          </p>
+
+          <h2>
+            Everything your dog needs,
+            all in one place.
+          </h2>
+
+          <p>
+            Boarding, daycare and grooming
+            from a trusted local business in Ballygarrett.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+          <!-- BOARDING -->
+
+          <article
+            class="service-card service-card-boarding"
+          >
+
+            <div class="service-card-inner">
+
+              <h3>
+                Boarding
+              </h3>
+
+              <p>
+                Comfortable, secure care
+                while you're away.
+              </p>
+
+              <a href="boarding.html">
+                Find out more →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- DAYCARE -->
+
+          <article
+            class="service-card service-card-daycare"
+          >
+
+            <div class="service-card-inner">
+
+              <h3>
+                Daycare
+              </h3>
+
+              <p>
+                A safe place to play,
+                exercise and socialise.
+              </p>
+
+              <a href="boarding.html#daycare">
+                Find out more →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- GROOMING -->
+
+          <article
+            class="service-card service-card-grooming"
+            id="grooming"
+          >
+
+            <div class="service-card-inner">
+
+              <h3>
+                Grooming
+              </h3>
+
+              <p>
+                Professional grooming
+                to keep them looking their best.
+              </p>
+
+              <a href="#grooming-info">
+                Find out more →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GROOMING
+    ====================================================== -->
+
+    <section
+      class="section grooming-intro"
+      id="grooming-info"
+    >
+
+      <div class="container">
+
+        <div class="about-grid grooming-grid">
+
+          <div class="about-copy">
+
+            <p class="eyebrow dark">
+              Professional Grooming
+            </p>
+
+            <h2>
+              Looking good.
+              Feeling even better.
+            </h2>
+
+            <p>
+              Room &amp; Groom offers professional dog grooming
+              and pampering services in Ballygarrett.
+            </p>
+
+            <p>
+              From regular grooming to a little extra pampering,
+              Julie can help keep your dog comfortable,
+              clean and looking their best.
+            </p>
+
+            <a
+              href="#contact"
+              class="btn btn-primary"
+            >
+              Enquire About Grooming
+            </a>
+
+          </div>
+
+
+          <div
+            class="grooming-image"
+            role="img"
+            aria-label="Dog grooming"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+      class="section about"
+      id="about"
+    >
+
+      <div class="container about-grid">
+
+        <div
+          class="about-image"
+          role="img"
+          aria-label="Room and Groom dog care"
+        ></div>
+
+
+        <div class="about-copy">
+
+          <p class="eyebrow dark">
+            About Room &amp; Groom
+          </p>
+
+          <h2>
+            Caring for Wexford's dogs
+            like they're our own.
+          </h2>
+
+          <p>
+            Room &amp; Groom is a family-run boarding kennels
+            and grooming parlour based in Ballygarrett,
+            Co. Wexford.
+          </p>
+
+          <p>
+            We provide a safe, comfortable and caring environment
+            for dogs staying with us for boarding, daycare
+            or visiting for grooming.
+          </p>
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+          >
+            Get in Touch
+          </a>
+
+        </div>
+
+
+        <div class="features">
+
+          <div class="feature">
+            <span class="feature-icon">🐾</span>
+            <span>Fully secure location</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">♡</span>
+            <span>Indoor &amp; outdoor pens</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🌲</span>
+            <span>Exercise &amp; play areas</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">✂</span>
+            <span>Full grooming services</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🛡</span>
+            <span>Flea &amp; tick removal</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-icon">🕒</span>
+            <span>24hr vet on call</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICE STRIP
+    ====================================================== -->
+
+    <section class="strip">
+
+      <div class="container strip-grid">
+
+        <div class="strip-item">
+          <span>⌂</span>
+          <p>
+            Long &amp; short-term<br>
+            boarding
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>☀</span>
+          <p>
+            Daycare
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>🐾</span>
+          <p>
+            Dog walking
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>♡</span>
+          <p>
+            Pamper treatments
+          </p>
+        </div>
+
+        <div class="strip-item">
+          <span>●</span>
+          <p>
+            Accessories<br>
+            &amp; more
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+
+    <section class="section testimonials">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow dark">
+            What our customers say
+          </p>
+
+          <h2>
+            Happy dogs.
+            Happy owners.
+          </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+          <blockquote>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine customer testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
+          </blockquote>
+
+
+          <blockquote>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine grooming testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
+          </blockquote>
+
+
+          <blockquote>
+
+            <div
+              class="stars"
+              aria-label="5 out of 5 stars"
+            >
+              ★★★★★
+            </div>
+
+            <p>
+              “Add a genuine boarding testimonial here.”
+            </p>
+
+            <footer>
+              — Customer name
+            </footer>
+
+          </blockquote>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT CTA
+    ====================================================== -->
+
+    <section
+      class="cta"
+      id="contact"
+    >
+
+      <div class="container cta-inner">
+
+        <div>
+
+          <p class="eyebrow">
+            Ready to chat?
+          </p>
+
+          <h2>
+            Talk to us about your dog's
+            stay or grooming.
+          </h2>
+
+          <p>
+            Get in touch with Room &amp; Groom today.
+          </p>
+
+        </div>
+
+
+        <div class="cta-actions">
+
+          <a
+            href="tel:+353860757092"
+            class="btn btn-ghost-light"
+          >
+            Call 086 075 7092
+          </a>
+
+          <a
+            href="mailto:juliewynne@live.ie?subject=Room%20%26%20Groom%20Enquiry"
+            class="btn btn-light"
+          >
+            Send an Enquiry
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <a
+          href="index.html"
+          class="brand footer-brand"
+        >
+
+          <span class="brand-main">
+            Room &amp; Groom
+          </span>
+
+          <span class="brand-sub">
+            Dog Boarding · Daycare · Grooming
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <strong>
+          Contact
+        </strong>
+
+        <p>
+          Ballygarrett,<br>
+          Co. Wexford
+        </p>
+
+        <p>
+          <a href="tel:+353860757092">
+            086 075 7092
+          </a>
+        </p>
+
+        <p>
+          <a href="mailto:juliewynne@live.ie">
+            juliewynne@live.ie
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="credit">
+
+        <p>
+          © 2026 Room &amp; Groom.<br>
+          All rights reserved.
+        </p>
+
+        <p>
+          Website by
+          <strong>WHELHAUS</strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       MOBILE NAVIGATION
+  ====================================================== -->
+
+  <script>
+
+    const menuToggle =
+      document.querySelector(".menu-toggle");
+
+    const mainNav =
+      document.querySelector(".main-nav");
+
+
+    if (menuToggle && mainNav) {
+
+      menuToggle.addEventListener("click", () => {
+
+        const isOpen =
+          mainNav.classList.toggle("open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(isOpen)
+        );
+
+      });
+
+
+      mainNav
+        .querySelectorAll("a")
+        .forEach(link => {
+
+          link.addEventListener("click", () => {
+
+            mainNav.classList.remove("open");
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+          });
+
+        });
+
+    }
+
+  </script>
+
+</body>
+</html>
