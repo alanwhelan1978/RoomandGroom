@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -10,7 +11,7 @@
     content="Dog boarding and daycare at Room & Groom in Ballygarrett, Co. Wexford. Safe, comfortable care with indoor and outdoor facilities."
   >
 
-  <title>Dog Boarding & Daycare Wexford | Room & Groom Ballygarrett</title>
+  <title>Dog Boarding & Daycare Wexford | Room & Groom</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,15 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- =========================
+  <!-- =====================================================
        HEADER
-  ========================== -->
+  ====================================================== -->
 
   <header class="site-header">
 
@@ -54,10 +56,11 @@
     <div class="container nav-wrap">
 
       <a
-        class="brand"
         href="index.html"
+        class="brand"
         aria-label="Room and Groom homepage"
       >
+
         <span class="brand-main">
           Room &amp; Groom
         </span>
@@ -65,6 +68,7 @@
         <span class="brand-sub">
           Dog Boarding · Daycare · Grooming
         </span>
+
       </a>
 
 
@@ -73,36 +77,44 @@
         type="button"
         aria-label="Open navigation menu"
         aria-expanded="false"
+        aria-controls="main-navigation"
       >
         ☰
       </button>
 
 
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav
+        class="main-nav"
+        id="main-navigation"
+        aria-label="Main navigation"
+      >
 
         <a href="index.html">
           Home
         </a>
 
-        <a href="boarding.html" class="active">
+        <a
+          href="boarding.html"
+          class="active"
+        >
           Boarding &amp; Daycare
         </a>
 
-        <a href="grooming.html">
+        <a href="index.html#grooming">
           Grooming
         </a>
 
-        <a href="about.html">
+        <a href="index.html#about">
           About
         </a>
 
-        <a href="contact.html">
+        <a href="index.html#contact">
           Contact
         </a>
 
         <a
+          href="index.html#contact"
           class="btn btn-primary nav-cta"
-          href="contact.html"
         >
           Enquire Now
         </a>
@@ -114,27 +126,33 @@
   </header>
 
 
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
   <main>
 
-    <!-- =========================
-         PAGE HERO
-    ========================== -->
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <section
       class="hero"
       style="
-        min-height: 520px;
+        min-height: 560px;
         background:
           linear-gradient(
             90deg,
-            rgba(17, 50, 42, 0.82) 0%,
-            rgba(17, 50, 42, 0.58) 38%,
-            rgba(17, 50, 42, 0.12) 72%,
-            rgba(17, 50, 42, 0.03) 100%
+            rgba(17,50,42,.84) 0%,
+            rgba(17,50,42,.62) 35%,
+            rgba(17,50,42,.18) 67%,
+            rgba(17,50,42,.04) 100%
           ),
           url('https://images.unsplash.com/photo-1777613074055-9a3eebe0825f?auto=format&fit=crop&w=2200&q=85');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       "
     >
 
@@ -154,18 +172,19 @@
           in Ballygarrett, Co. Wexford.
         </p>
 
+
         <div class="hero-actions">
 
           <a
+            href="index.html#contact"
             class="btn btn-primary"
-            href="contact.html"
           >
             Enquire About Boarding
           </a>
 
           <a
-            class="btn btn-ghost"
             href="tel:+353860757092"
+            class="btn btn-ghost"
           >
             Call 086 075 7092
           </a>
@@ -177,9 +196,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          INTRO
-    ========================== -->
+    ====================================================== -->
 
     <section class="section">
 
@@ -198,18 +217,20 @@
                 center / cover
                 no-repeat;
             "
+            role="img"
+            aria-label="Dogs enjoying outdoor play"
           ></div>
 
 
           <div class="about-copy">
 
             <p class="eyebrow dark">
-              A home away from home
+              A Home Away From Home
             </p>
 
             <h2>
-              A comfortable place to stay,
-              play and relax.
+              A comfortable place
+              to stay, play and relax.
             </h2>
 
             <p>
@@ -219,14 +240,14 @@
             </p>
 
             <p>
-              Dogs have access to secure indoor and outdoor areas,
-              exercise space and plenty of attention throughout
-              their stay.
+              Dogs have access to secure indoor and outdoor
+              areas, exercise space and plenty of attention
+              throughout their stay.
             </p>
 
             <a
+              href="index.html#contact"
               class="btn btn-primary"
-              href="contact.html"
             >
               Make an Enquiry
             </a>
@@ -240,12 +261,13 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          BOARDING
-    ========================== -->
+    ====================================================== -->
 
     <section
       class="section"
+      id="boarding"
       style="background: var(--cream);"
     >
 
@@ -258,11 +280,12 @@
           </p>
 
           <h2>
-            Comfortable care while you're away.
+            Comfortable care
+            while you're away.
           </h2>
 
           <p>
-            Room &amp; Groom offers both short and longer-term
+            Room &amp; Groom offers short and longer-term
             boarding for dogs in a secure countryside setting.
           </p>
 
@@ -279,6 +302,7 @@
               box-shadow: 0 12px 35px rgba(23,56,71,.08);
             "
           >
+
             <h3>
               Secure accommodation
             </h3>
@@ -288,6 +312,7 @@
               comfortable accommodation and space throughout
               their stay.
             </p>
+
           </article>
 
 
@@ -299,6 +324,7 @@
               box-shadow: 0 12px 35px rgba(23,56,71,.08);
             "
           >
+
             <h3>
               Exercise &amp; play
             </h3>
@@ -308,6 +334,7 @@
               so they can stay active and enjoy their time
               with us.
             </p>
+
           </article>
 
 
@@ -319,14 +346,17 @@
               box-shadow: 0 12px 35px rgba(23,56,71,.08);
             "
           >
+
             <h3>
               Individual attention
             </h3>
 
             <p>
               Every dog has its own personality and routine,
-              so care can be adapted around their individual needs.
+              so care can be adapted around their individual
+              needs.
             </p>
+
           </article>
 
         </div>
@@ -336,11 +366,15 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          DAYCARE
-    ========================== -->
+    ====================================================== -->
 
-    <section class="section">
+    <section
+      class="section"
+      id="daycare"
+      style="background: white;"
+    >
 
       <div class="container">
 
@@ -356,7 +390,8 @@
             </p>
 
             <h2>
-              A safe place to spend the day.
+              A safe place
+              to spend the day.
             </h2>
 
             <p>
@@ -373,8 +408,8 @@
             </p>
 
             <a
+              href="index.html#contact"
               class="btn btn-primary"
-              href="contact.html"
             >
               Ask About Daycare
             </a>
@@ -390,6 +425,8 @@
                 center / cover
                 no-repeat;
             "
+            role="img"
+            aria-label="Dogs playing outdoors"
           ></div>
 
         </div>
@@ -399,13 +436,13 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          FACILITIES
-    ========================== -->
+    ====================================================== -->
 
     <section
       class="section"
-      style="background: white;"
+      style="background: var(--cream);"
     >
 
       <div class="container">
@@ -417,20 +454,22 @@
           </p>
 
           <h2>
-            Everything they need for a comfortable stay.
+            Everything they need
+            for a comfortable stay.
           </h2>
 
         </div>
 
 
-        <div class="features"
-             style="
-               border-left: 0;
-               padding-left: 0;
-               display: grid;
-               grid-template-columns: repeat(3, 1fr);
-               gap: 20px;
-             "
+        <div
+          class="features"
+          style="
+            border-left: 0;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+          "
         >
 
           <div class="feature">
@@ -470,13 +509,13 @@
     </section>
 
 
-    <!-- =========================
-         BEFORE YOUR DOG STAYS
-    ========================== -->
+    <!-- =====================================================
+         BEFORE THEIR STAY
+    ====================================================== -->
 
     <section
       class="section"
-      style="background: var(--cream);"
+      style="background: white;"
     >
 
       <div class="container">
@@ -488,7 +527,8 @@
           </p>
 
           <h2>
-            A few things we'll confirm with you.
+            A few things we'll
+            confirm with you.
           </h2>
 
         </div>
@@ -498,11 +538,12 @@
 
           <article
             style="
-              background: white;
+              background: var(--cream);
               padding: 30px;
               border-radius: 18px;
             "
           >
+
             <h3>
               Vaccinations
             </h3>
@@ -511,16 +552,18 @@
               We'll confirm the vaccination requirements
               that apply before your dog's stay.
             </p>
+
           </article>
 
 
           <article
             style="
-              background: white;
+              background: var(--cream);
               padding: 30px;
               border-radius: 18px;
             "
           >
+
             <h3>
               Food &amp; routine
             </h3>
@@ -530,16 +573,18 @@
               medication or anything important about your
               dog's normal routine.
             </p>
+
           </article>
 
 
           <article
             style="
-              background: white;
+              background: var(--cream);
               padding: 30px;
               border-radius: 18px;
             "
           >
+
             <h3>
               Special requirements
             </h3>
@@ -548,6 +593,7 @@
               Tell us about any behavioural, health or
               care requirements when making your enquiry.
             </p>
+
           </article>
 
         </div>
@@ -560,8 +606,8 @@
             max-width: 800px;
           "
         >
-          Exact boarding requirements and policies will be
-          confirmed with you before booking.
+          Exact boarding requirements and policies
+          will be confirmed before booking.
         </p>
 
       </div>
@@ -569,9 +615,9 @@
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          CTA
-    ========================== -->
+    ====================================================== -->
 
     <section class="cta">
 
@@ -584,12 +630,13 @@
           </p>
 
           <h2>
-            Tell us what your dog needs.
+            Tell us what
+            your dog needs.
           </h2>
 
           <p>
-            Contact Room &amp; Groom to discuss boarding
-            or daycare availability.
+            Contact Room &amp; Groom to discuss
+            boarding or daycare.
           </p>
 
         </div>
@@ -598,15 +645,15 @@
         <div class="cta-actions">
 
           <a
-            class="btn btn-ghost-light"
             href="tel:+353860757092"
+            class="btn btn-ghost-light"
           >
             Call 086 075 7092
           </a>
 
           <a
+            href="mailto:juliewynne@live.ie?subject=Room%20%26%20Groom%20Boarding%20Enquiry"
             class="btn btn-light"
-            href="contact.html"
           >
             Send an Enquiry
           </a>
@@ -620,9 +667,9 @@
   </main>
 
 
-  <!-- =========================
+  <!-- =====================================================
        FOOTER
-  ========================== -->
+  ====================================================== -->
 
   <footer class="site-footer">
 
@@ -631,7 +678,10 @@
 
       <div>
 
-        <div class="brand footer-brand">
+        <a
+          href="index.html"
+          class="brand footer-brand"
+        >
 
           <span class="brand-main">
             Room &amp; Groom
@@ -641,14 +691,16 @@
             Dog Boarding · Daycare · Grooming
           </span>
 
-        </div>
+        </a>
 
       </div>
 
 
       <div class="footer-contact">
 
-        <strong>Contact</strong>
+        <strong>
+          Contact
+        </strong>
 
         <p>
           Ballygarrett,<br>
@@ -689,9 +741,9 @@
   </footer>
 
 
-  <!-- =========================
-       MOBILE NAV
-  ========================== -->
+  <!-- =====================================================
+       MOBILE NAVIGATION
+  ====================================================== -->
 
   <script>
 
@@ -702,38 +754,41 @@
       document.querySelector(".main-nav");
 
 
-    menuToggle.addEventListener("click", () => {
+    if (menuToggle && mainNav) {
 
-      const isOpen =
-        mainNav.classList.toggle("open");
+      menuToggle.addEventListener("click", () => {
 
-      menuToggle.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-      );
+        const isOpen =
+          mainNav.classList.toggle("open");
 
-    });
-
-
-    mainNav
-      .querySelectorAll("a")
-      .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-          mainNav.classList.remove("open");
-
-          menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-
-        });
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(isOpen)
+        );
 
       });
 
-  </script>
 
+      mainNav
+        .querySelectorAll("a")
+        .forEach(link => {
+
+          link.addEventListener("click", () => {
+
+            mainNav.classList.remove("open");
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+          });
+
+        });
+
+    }
+
+  </script>
 
 </body>
 </html>
