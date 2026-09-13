@@ -68,15 +68,10 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
-
   background: rgba(247, 243, 235, 0.97);
   backdrop-filter: blur(10px);
-
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
 }
-
-
-/* TOP CONTACT BAR */
 
 .topbar {
   background: var(--cream);
@@ -85,13 +80,10 @@ textarea {
 
 .topbar-inner {
   min-height: 38px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   gap: 24px;
-
   font-size: 0.82rem;
   color: var(--blue-dark);
 }
@@ -104,63 +96,41 @@ textarea {
   opacity: 0.65;
 }
 
-
-/* MAIN NAV */
-
 .nav-wrap {
   min-height: 88px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 30px;
 }
-
-
-/* BRAND */
 
 .brand {
   display: flex;
   flex-direction: column;
-
   line-height: 1;
 }
 
 .brand-main {
   font-family: "DM Serif Display", Georgia, serif;
-
   color: var(--blue-dark);
-
   font-size: 2.35rem;
-
   letter-spacing: -0.02em;
 }
 
 .brand-sub {
   margin-top: 9px;
-
   color: var(--blue);
-
   text-transform: uppercase;
-
   font-size: 0.64rem;
   font-weight: 700;
-
   letter-spacing: 0.2em;
 }
-
-
-/* NAVIGATION */
 
 .main-nav {
   display: flex;
   align-items: center;
-
   gap: 24px;
-
   color: var(--blue-dark);
-
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -171,17 +141,12 @@ textarea {
 
 .main-nav > a:not(.btn)::after {
   content: "";
-
   position: absolute;
-
   left: 0;
   bottom: -7px;
-
   width: 0;
   height: 2px;
-
   background: var(--blue);
-
   transition: width 0.2s ease;
 }
 
@@ -190,22 +155,13 @@ textarea {
   width: 100%;
 }
 
-
-/* MOBILE MENU BUTTON */
-
 .menu-toggle {
   display: none;
-
   padding: 5px;
-
   border: 0;
-
   background: transparent;
-
   color: var(--blue-dark);
-
   font-size: 1.7rem;
-
   cursor: pointer;
 }
 
@@ -216,19 +172,13 @@ textarea {
 
 .btn {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   min-height: 48px;
-
   padding: 0 23px;
-
   border-radius: 999px;
-
   font-size: 0.88rem;
   font-weight: 700;
-
   letter-spacing: 0.02em;
 
   transition:
@@ -242,12 +192,8 @@ textarea {
   transform: translateY(-2px);
 }
 
-
-/* PRIMARY */
-
 .btn-primary {
   background: var(--blue);
-
   color: var(--white);
 }
 
@@ -255,27 +201,18 @@ textarea {
   background: var(--blue-dark);
 }
 
-
-/* HERO OUTLINE */
-
 .btn-ghost {
   border: 1px solid rgba(255, 255, 255, 0.75);
-
   color: var(--white);
 }
 
 .btn-ghost:hover {
   background: var(--white);
-
   color: var(--blue-dark);
 }
 
-
-/* WHITE CTA BUTTON */
-
 .btn-light {
   background: var(--white);
-
   color: var(--blue-dark);
 }
 
@@ -283,18 +220,13 @@ textarea {
   background: var(--cream);
 }
 
-
-/* CTA OUTLINE */
-
 .btn-ghost-light {
   border: 1px solid rgba(255, 255, 255, 0.7);
-
   color: var(--white);
 }
 
 .btn-ghost-light:hover {
   background: var(--white);
-
   color: var(--blue-dark);
 }
 
@@ -305,12 +237,9 @@ textarea {
 
 .hero {
   position: relative;
-
   min-height: 650px;
-
   display: flex;
   align-items: center;
-
   overflow: hidden;
 
   background:
@@ -321,7 +250,7 @@ textarea {
       rgba(17, 50, 42, 0.15) 67%,
       rgba(17, 50, 42, 0.04) 100%
     ),
-    url("assets/hero.jpg");
+    url("https://images.unsplash.com/photo-1768676758483-ff1d62798ab9?auto=format&fit=crop&w=2200&q=85");
 
   background-size: cover;
   background-position: center;
@@ -330,30 +259,20 @@ textarea {
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 }
 
 .hero-content {
   position: relative;
-
   z-index: 2;
-
   padding-block: 90px;
-
   color: var(--white);
 }
 
-
-/* SMALL SECTION LABEL */
-
 .eyebrow {
   margin: 0 0 15px;
-
   text-transform: uppercase;
-
   letter-spacing: 0.28em;
-
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -362,37 +281,25 @@ textarea {
   color: var(--blue);
 }
 
-
-/* HERO HEADING */
-
 .hero h1 {
   max-width: 780px;
-
   margin: 0;
-
   font-family: "DM Serif Display", Georgia, serif;
-
   font-size: clamp(4rem, 8vw, 7.3rem);
   font-weight: 400;
-
   line-height: 0.93;
-
   letter-spacing: -0.03em;
 }
 
 .hero-copy {
   max-width: 560px;
-
   margin: 27px 0 32px;
-
   font-size: 1.22rem;
 }
 
 .hero-actions {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 14px;
 }
 
@@ -407,23 +314,17 @@ textarea {
 
 .section-heading {
   max-width: 760px;
-
   margin-bottom: 38px;
 }
 
 .section h2,
 .cta h2 {
   margin: 0 0 17px;
-
   color: var(--blue-dark);
-
   font-family: "DM Serif Display", Georgia, serif;
-
   font-size: clamp(2.6rem, 5vw, 4.5rem);
   font-weight: 400;
-
   line-height: 1.02;
-
   letter-spacing: -0.025em;
 }
 
@@ -438,24 +339,17 @@ textarea {
 
 .service-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 18px;
 }
 
 .service-card {
   position: relative;
-
   min-height: 430px;
-
   overflow: hidden;
-
   border-radius: var(--radius);
-
   background-size: cover;
   background-position: center;
-
   box-shadow: var(--shadow);
 
   transition:
@@ -465,18 +359,12 @@ textarea {
 
 .service-card:hover {
   transform: translateY(-6px);
-
   box-shadow: 0 25px 55px rgba(23, 56, 71, 0.18);
 }
 
-
-/* DARK GRADIENT OVER PHOTOS */
-
 .service-card::after {
   content: "";
-
   position: absolute;
-
   inset: 0;
 
   background:
@@ -488,53 +376,52 @@ textarea {
 }
 
 
-/* IMAGES */
+/* Boarding */
 
 .service-card-boarding {
-  background-image: url("assets/boarding.jpg");
+  background-image:
+    url("https://images.unsplash.com/photo-1777613074055-9a3eebe0825f?auto=format&fit=crop&w=1400&q=85");
 }
+
+
+/* Daycare */
 
 .service-card-daycare {
-  background-image: url("assets/daycare.jpg");
+  background-image:
+    url("https://images.unsplash.com/photo-1781336469103-71dfd815a2c6?auto=format&fit=crop&w=1400&q=85");
 }
+
+
+/* Grooming */
 
 .service-card-grooming {
-  background-image: url("assets/grooming.jpg");
+  background-image:
+    url("https://images.unsplash.com/photo-1719464454959-9cf304ef4774?auto=format&fit=crop&w=1400&q=85");
 }
-
-
-/* CARD CONTENT */
 
 .service-card-inner {
   position: absolute;
-
   z-index: 2;
-
   right: 27px;
   bottom: 27px;
   left: 27px;
-
   color: var(--white);
 }
 
 .service-card h3 {
   margin: 0 0 7px;
-
   font-family: "DM Serif Display", Georgia, serif;
-
   font-size: 2.2rem;
   font-weight: 400;
 }
 
 .service-card p {
   max-width: 300px;
-
   margin: 0 0 18px;
 }
 
 .service-card a {
   font-size: 0.9rem;
-
   font-weight: 700;
 }
 
@@ -549,32 +436,22 @@ textarea {
 
 .about-grid {
   display: grid;
-
   grid-template-columns: 1.05fr 1.25fr 0.8fr;
-
   gap: 46px;
-
   align-items: center;
 }
 
-
-/* BUILDING PHOTO */
-
 .about-image {
   min-height: 470px;
-
   border-radius: var(--radius);
 
   background:
-    url("assets/cottage.jpg")
+    url("https://images.unsplash.com/photo-1777613074055-9a3eebe0825f?auto=format&fit=crop&w=1400&q=85")
     center / cover
     no-repeat;
 
   box-shadow: var(--shadow);
 }
-
-
-/* COPY */
 
 .about-copy p {
   font-size: 1.02rem;
@@ -584,26 +461,17 @@ textarea {
   margin-top: 10px;
 }
 
-
-/* FEATURES */
-
 .features {
   padding-left: 28px;
-
   border-left: 1px solid rgba(39, 76, 94, 0.15);
 }
 
 .feature {
   display: flex;
-
   align-items: center;
-
   gap: 14px;
-
   padding: 12px 0;
-
   color: var(--blue-dark);
-
   font-weight: 600;
 }
 
@@ -613,11 +481,8 @@ textarea {
 
 .feature-icon {
   width: 30px;
-
   display: inline-flex;
-
   justify-content: center;
-
   font-size: 1.15rem;
 }
 
@@ -628,32 +493,23 @@ textarea {
 
 .strip {
   padding: 34px 0;
-
   background: var(--sage);
-
   color: var(--white);
 }
 
 .strip-grid {
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
-
   gap: 18px;
-
   text-align: center;
 }
 
 .strip-item {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-
   gap: 7px;
-
   font-size: 0.88rem;
   font-weight: 600;
 }
@@ -677,45 +533,33 @@ textarea {
 
 .testimonial-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 18px;
 }
 
 blockquote {
   margin: 0;
-
   padding: 30px;
-
   border-radius: 18px;
-
   background: var(--white);
-
   box-shadow: 0 12px 35px rgba(23, 56, 71, 0.08);
 }
 
 blockquote p {
   margin: 13px 0 20px;
-
   font-family: "DM Serif Display", Georgia, serif;
-
   font-size: 1.28rem;
-
   line-height: 1.45;
 }
 
 blockquote footer {
   color: var(--muted);
-
   font-size: 0.86rem;
 }
 
 .stars {
   color: #b58b20;
-
   letter-spacing: 0.15em;
-
   font-size: 0.9rem;
 }
 
@@ -726,28 +570,21 @@ blockquote footer {
 
 .cta {
   padding: 64px 0;
-
   background: var(--blue);
-
   color: var(--white);
 }
 
 .cta-inner {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
-
   gap: 40px;
 }
 
 .cta h2 {
   max-width: 760px;
-
   margin-bottom: 10px;
-
   color: var(--white);
-
   font-size: clamp(2.3rem, 4vw, 3.8rem);
 }
 
@@ -757,11 +594,8 @@ blockquote footer {
 
 .cta-actions {
   display: flex;
-
   flex-wrap: wrap;
-
   justify-content: flex-end;
-
   gap: 12px;
 }
 
@@ -772,21 +606,15 @@ blockquote footer {
 
 .site-footer {
   padding: 50px 0;
-
   background: #f2eee6;
-
   color: var(--blue-dark);
-
   font-size: 0.9rem;
 }
 
 .footer-grid {
   display: grid;
-
   grid-template-columns: 1.25fr 1fr 1fr;
-
   gap: 35px;
-
   align-items: start;
 }
 
@@ -821,33 +649,22 @@ blockquote footer {
     display: none;
   }
 
-
-  /* MOBILE NAV */
-
   .menu-toggle {
     display: block;
   }
 
   .main-nav {
     position: absolute;
-
     top: 88px;
     right: 20px;
     left: 20px;
-
     display: none;
-
     padding: 22px;
-
     border-radius: 16px;
-
     background: var(--cream);
-
     box-shadow: var(--shadow);
-
     flex-direction: column;
     align-items: stretch;
-
     gap: 18px;
   }
 
@@ -863,15 +680,9 @@ blockquote footer {
     width: 100%;
   }
 
-
-  /* HERO */
-
   .hero {
     min-height: 600px;
   }
-
-
-  /* SERVICES */
 
   .service-grid {
     grid-template-columns: 1fr;
@@ -881,52 +692,34 @@ blockquote footer {
     min-height: 410px;
   }
 
-
-  /* ABOUT */
-
   .about-grid {
     grid-template-columns: 1fr 1fr;
   }
 
   .features {
     grid-column: 1 / -1;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     padding-left: 0;
-
     border-left: 0;
   }
-
-
-  /* SERVICE STRIP */
 
   .strip-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-  /* TESTIMONIALS */
-
   .testimonial-grid {
     grid-template-columns: 1fr;
   }
 
-
-  /* CTA */
-
   .cta-inner {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
   .cta-actions {
     justify-content: flex-start;
   }
-
 }
 
 
@@ -940,9 +733,6 @@ blockquote footer {
     width: min(100% - 28px, 1180px);
   }
 
-
-  /* HEADER */
-
   .nav-wrap {
     min-height: 78px;
   }
@@ -953,9 +743,7 @@ blockquote footer {
 
   .brand-sub {
     margin-top: 7px;
-
     font-size: 0.53rem;
-
     letter-spacing: 0.13em;
   }
 
@@ -963,12 +751,8 @@ blockquote footer {
     top: 78px;
   }
 
-
-  /* HERO */
-
   .hero {
     min-height: 620px;
-
     background-position: 62% center;
   }
 
@@ -986,12 +770,8 @@ blockquote footer {
 
   .hero-actions {
     align-items: flex-start;
-
     flex-direction: column;
   }
-
-
-  /* SECTIONS */
 
   .section {
     padding: 72px 0;
@@ -1001,15 +781,9 @@ blockquote footer {
     font-size: 2.7rem;
   }
 
-
-  /* SERVICE CARDS */
-
   .service-card {
     min-height: 380px;
   }
-
-
-  /* ABOUT */
 
   .about-grid {
     grid-template-columns: 1fr;
@@ -1023,28 +797,18 @@ blockquote footer {
     grid-template-columns: 1fr;
   }
 
-
-  /* STRIP */
-
   .strip-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-
-  /* CTA */
-
   .cta-actions {
     width: 100%;
-
     flex-direction: column;
   }
 
   .cta-actions .btn {
     width: 100%;
   }
-
-
-  /* FOOTER */
 
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1053,7 +817,6 @@ blockquote footer {
   .credit {
     text-align: left;
   }
-
 }
 
 
@@ -1078,5 +841,4 @@ blockquote footer {
   .strip-grid {
     grid-template-columns: 1fr;
   }
-
 }
